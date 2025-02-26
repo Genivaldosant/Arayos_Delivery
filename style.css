@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto", serif;
+}
+
+header {
+    background-color: red;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.background-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container-flex {
+    display: flex;
+}
+
+body{
+    background-color: #ddd8d8;
+}
+
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header .logo img {
+    height: 80px;
+}
+.header .logo {
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: -41px;
+}
+
+.menu-hamburguer {
+    width: 34px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.menu-hamburguer span {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin-bottom: 4px;
+}
+
+nav {
+    background-color: rgb(204, 4, 4);
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+    padding: 8px;
+}
+
+.titulo-corousel {
+    text-align: center;
+}
+
+.titulos {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    color: red;
+}
+
+.carousel img{
+    height: 500px;
+}
+
+.container-lojas {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loja-meio {
+    margin: 0 4%;
+}
+
+.container-loja {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.btn-pedido {
+    position: absolute;
+    right: 16px;
+    top: 78px;
+    background-color: red;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container-loja img {
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+
+.nome-loja {
+    font-size: 20px;
+}
+
+.lanches {
+    color: red;
+    font-size: 12px;
+}
+
+time {
+    color: rgba(0,0,0,0.5);
+}
+
+#ultima-section {
+    padding-bottom: 40px;
+}
+
+.form-campo label,
+.form-campo input {
+    display: block;
+}
+
+.form-campo {
+    width: 500px;
+}
+
+.form-campo input,
+.form-campo select {
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.validade, .CVV, .bairro, .N {
+    width: 49%;
+}
+
+.validade-CVV, .bairro-N{
+    justify-content: space-between;
+}
+
+.final-pedido {
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.btn {
+    padding: 8px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.pagamento, .pedido{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pagamento label,
+.pedido label {
+    text-align: initial;
+}
+
+.error {
+    color: red;
+}
+
+.pedido {
+    position: relative;
+}
+
+.SN {
+    position: absolute;
+    bottom: 92px;
+    right: 25px;
+}
+
+.inputCheckbox:checked{
+    accent-color: red;
+}
+
+.pagamento {
+    margin-right: 80px;
+}
+
+footer {
+    background-color: red;
+    padding: 10px 0;
+}
+
+footer > div {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+footer ul li img {
+    height: 30px;
+    margin-left: 10px;
+}
+
