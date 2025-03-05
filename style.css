@@ -248,3 +248,116 @@ footer ul li img {
     margin-left: 10px;
 }
 
+#dialog {
+    display: none;
+}
+
+.ui-dialog {
+    background-color: #fff !important; /* Cor de fundo vermelha */
+    border-radius: 30px !important; /* Cantos arredondados */
+    padding: 20px !important; /* Preenchimento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o modal */
+}
+
+/* Estilos para o cabeçalho do modal */
+.ui-dialog-titlebar {
+    background-color: red !important; /* Cor de fundo vermelha */
+    border-radius: 10px !important;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ui-dialog-titlebar-close {
+    background-color: red !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ui-dialog-title {
+    color: #fff;
+}
+
+/* Estilos para o corpo do modal */
+#dialog p {
+    color: rgba(0,0,0,1) !important; /* Cor do texto branco */
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 15px !important;
+}
+
+@media screen and (max-width: 767px) {
+    header > .container{
+        max-width: 95%;
+        width: 100%;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .background-container{
+        max-width: 100%;
+        width: 100%;
+        margin: 0 10px;
+    }
+    .container-lojas{
+        display: block;
+    }
+
+    .container-loja {
+        max-width: 95%;
+        width: 100%;
+    }
+
+    .loja-meio {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #ultima-section > div.container-flex{
+        display: block;
+    }
+
+    #ultima-section div.container-flex form{
+        display: block;
+    }
+
+    .form-campo {
+        width:100%;
+    }
+    .pagamento {
+        margin-right: 0px;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Opcional, evita scroll horizontal indesejado */
+    }
+
+    .pagamento, .pedido {
+        max-width: 95%;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .carousel img {
+        height: 15.6em;
+    }
+
+    .SN {
+        right: 26px;
+    }
+}

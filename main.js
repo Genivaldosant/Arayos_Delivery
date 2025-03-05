@@ -1,5 +1,13 @@
 $(document).ready(function(){
-    $('.menu-hamburguer').click(function(){
+    $(document).on('click', function(){
+        let clickMenu = $(this).closest('nav')
+        if (clickMenu.length === 0) {
+            $('nav').slideUp();
+        }
+    })
+    $('#accordion').accordion();
+    $('.menu-hamburguer').click(function(event){
+        event.stopPropagation();
         $('nav').slideToggle();
     });
 
@@ -23,7 +31,7 @@ $(document).ready(function(){
 
     $('.btn-pedido').click(function(){
         const destino = $('#Pagamento')
-
+        $("#dialog").dialog();
         $('form #pedidoEscolhido').val($(this).parent().find('.lanches').text())
         $('Html').animate({
             scrollTop: destino.offset().top
